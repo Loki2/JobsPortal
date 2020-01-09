@@ -40,6 +40,6 @@ app.use('/products', productRoute);
 app.use('/services', serviceRoute);
 app.use('/about', aboutRoute);
 app.use('/contact', contactRoute);
-app.use('/jobs', jobsRoute);
-
+app.use('/jobs', indexRoute);
+app.use('/new_jobs', jobsRoute);
 module.exports = app;
