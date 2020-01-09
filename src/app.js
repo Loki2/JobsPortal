@@ -17,7 +17,13 @@ app.use(express.static('public'));
 /*
 ****IMPORT ALL ROUTES COMPONENT
 */
-const indexRoute = require('./routes/index.Route');
+const indexRoute = require('./routes/index.route');
+const blogRoute = require('./routes/blog.route');
+const productRoute = require('./routes/product.Route');
+const serviceRoute = require('./routes/service.route');
+const aboutRoute = require('./routes/about.route');
+const contactRoute = require('./routes/contact.route');
+const jobsRoute = require('./routes/jobs.route');
 
 
 
@@ -29,5 +35,11 @@ const indexRoute = require('./routes/index.Route');
 ****USE ALL ROUTES THEN EXPORTS
 */
 app.use('', indexRoute);
+app.use('/blogs', blogRoute);
+app.use('/products', productRoute);
+app.use('/services', serviceRoute);
+app.use('/about', aboutRoute);
+app.use('/contact', contactRoute);
+app.use('/jobs', jobsRoute);
 
 module.exports = app;
