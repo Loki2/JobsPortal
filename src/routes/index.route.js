@@ -11,4 +11,6 @@ router.get('/jobs', (req, res, next) => {
     res.render('jobs/index')
 })
 
+
+
 module.exports = router;
