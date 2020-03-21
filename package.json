@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
-    "build": "nodemon server.js",
+    "dev": "nodemon server.js",
+    "postinstall":"npm run build",
     "start": "node server.js"
   },
   "keywords": [],
