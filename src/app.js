@@ -24,6 +24,8 @@ const serviceRoute = require('./routes/service.route');
 const aboutRoute = require('./routes/about.route');
 const contactRoute = require('./routes/contact.route');
 const jobsRoute = require('./routes/jobs.route');
+const LoginRoute = require('./routes/login.route');
+const RegisterRoute = require('./routes/register.route')
 
 
 
@@ -42,4 +44,6 @@ app.use('/about', aboutRoute);
 app.use('/contact', contactRoute);
 app.use('/jobs', indexRoute);
 app.use('/new_jobs', jobsRoute);
+app.use('/login', LoginRoute);
+app.use('/register', RegisterRoute)
 module.exports = app;
